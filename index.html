@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EMMAV Express delivers parcels, food, groceries and urgent packages across Nigeria.">
+  <title>EMMAV Express | Delivering with speed, care and trust</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="EMMAV Express home">
+      <span class="brand-mark">✦</span><span>EMMAV <b>EXPRESS</b></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a>
+      <a href="#tracking">Track</a><a href="#business">Business</a><a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a><a class="nav-cta" href="#booking">Book delivery</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">YOUR DELIVERY PARTNER · NIGERIA</p>
+        <h1>Moving what matters.<br><span>Delivering with care.</span></h1>
+        <p class="hero-intro">From important parcels to everyday essentials, EMMAV Express helps move your deliveries with speed, care and trust.</p>
+        <div class="hero-actions"><a class="button button-gold" href="#booking">Book a delivery</a><a class="button button-outline" href="#tracking">Track a package</a></div>
+        <div class="hero-note"><span>24/7</span> Service information available anytime · Based in Abakaliki, serving Nigeria</div>
+      </div>
+      <div class="hero-art" aria-label="Delivery truck illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="delivery-card"><span class="truck-icon">🚚</span><div><b>EMMAV EXPRESS</b><small>On the move, for you.</small></div><span class="card-check">✓</span></div>
+        <div class="floating-tag tag-top">SPEED <b>+</b></div><div class="floating-tag tag-bottom">CARE <b>+</b> TRUST</div>
+      </div>
+    </section>
+
+    <section class="trust-strip"><div><b>Nationwide</b><span>Coverage across Nigeria</span></div><div><b>24 / 7</b><span>Always-on service information</span></div><div><b>One platform</b><span>Personal and business deliveries</span></div></section>
+
+    <section class="section about-section" id="about">
+      <div class="section-kicker">WHO WE ARE</div><div class="two-column">
+        <div><h2>Deliveries made <span>simpler.</span></h2></div>
+        <div><p>EMMAV Express is a delivery and logistics concept based in Abakaliki, Ebonyi State, with a service vision that reaches customers across Nigeria. We bring parcel, express, food and grocery delivery options together in one convenient place.</p><p>Whether you are sending something to a friend or arranging deliveries for your business, our goal is to make the process clear and straightforward.</p></div>
+      </div>
+    </section>
+
+    <section class="section services-section" id="services">
+      <div class="section-heading"><div><div class="section-kicker">WHAT WE DELIVER</div><h2>Services for <span>everyday life.</span></h2></div><p>Choose a delivery option that suits what you need to send.</p></div>
+      <div class="service-grid">
+        <article class="service-card"><div class="service-icon">▣</div><h3>Parcel delivery</h3><p>Send documents, gifts and packages to their destination.</p><a href="#booking">Book parcel <span>↗</span></a></article>
+        <article class="service-card"><div class="service-icon">↗</div><h3>Same-day delivery</h3><p>An express option for deliveries that need extra urgency.</p><a href="#booking">Book express <span>↗</span></a></article>
+        <article class="service-card"><div class="service-icon">♨</div><h3>Food delivery</h3><p>Connect with restaurants and arrange food deliveries.</p><a href="#booking">Order delivery <span>↗</span></a></article>
+        <article class="service-card"><div class="service-icon">⌂</div><h3>Grocery delivery</h3><p>Get everyday shopping and grocery items delivered.</p><a href="#booking">Book grocery <span>↗</span></a></article>
+      </div>
+    </section>
+
+    <section class="section tracking-section" id="tracking">
+      <div class="tracking-copy"><div class="section-kicker">DELIVERY UPDATES</div><h2>Know where your <span>delivery stands.</span></h2><p>Enter a tracking reference to view a sample delivery journey. This is a demonstration feature and does not connect to a live courier network.</p></div>
+      <div class="tracking-panel"><label for="trackingInput">Tracking number</label><div class="input-row"><input id="trackingInput" type="text" placeholder="Try EMX-2048"><button class="button button-gold" id="trackButton">Track</button></div><p class="hint">Demo reference: EMX-2048</p><div id="trackingResult" class="tracking-result" aria-live="polite">Your delivery updates will appear here.</div></div>
+    </section>
+
+    <section class="section booking-section" id="booking">
+      <div class="section-heading"><div><div class="section-kicker">GET STARTED</div><h2>Book a <span>delivery.</span></h2></div><p>Enter the details below to create a sample booking reference.</p></div>
+      <form class="form-card" id="bookingForm">
+        <div class="form-grid">
+          <div class="form-field"><label for="senderName">Sender's name</label><input id="senderName" name="senderName" required placeholder="Full name"></div>
+          <div class="form-field"><label for="senderPhone">Sender's phone</label><input id="senderPhone" name="senderPhone" required type="tel" placeholder="Phone number"></div>
+          <div class="form-field"><label for="receiverName">Receiver's name</label><input id="receiverName" name="receiverName" required placeholder="Full name"></div>
+          <div class="form-field"><label for="receiverPhone">Receiver's phone</label><input id="receiverPhone" name="receiverPhone" required type="tel" placeholder="Phone number"></div>
+          <div class="form-field"><label for="pickup">Pickup address</label><input id="pickup" name="pickup" required placeholder="Pickup location"></div>
+          <div class="form-field"><label for="destination">Delivery address</label><input id="destination" name="destination" required placeholder="Destination"></div>
+          <div class="form-field"><label for="serviceType">Delivery service</label><select id="serviceType" name="serviceType" required><option value="">Choose a service</option><option>Parcel delivery</option><option>Same-day delivery</option><option>Food delivery</option><option>Grocery delivery</option></select></div>
+          <div class="form-field"><label for="packageSize">Package size</label><select id="packageSize" name="packageSize" required><option value="">Choose size</option><option>Small</option><option>Medium</option><option>Large</option></select></div>
+          <div class="form-field full"><label for="instructions">Additional instructions</label><textarea id="instructions" name="instructions" rows="3" placeholder="Optional delivery notes"></textarea></div>
+        </div>
+        <button class="button button-gold" type="submit">Create sample booking</button><p class="form-message" id="bookingMessage" aria-live="polite"></p>
+        <p class="fine-print">Demonstration only: this form does not dispatch a courier or send/store customer information. Use sample details for testing.</p>
+      </form>
+    </section>
+
+    <section class="section business-section" id="business">
+      <div class="business-copy"><div class="section-kicker">FOR BUSINESSES</div><h2>Let's move your <span>business forward.</span></h2><p>EMMAV Express is designed to support individual customers and business partnerships, including restaurants, supermarkets, online vendors and other businesses.</p><ul><li>Delivery support for customer orders</li><li>Options for food, groceries and parcels</li><li>A simple enquiry process for potential partners</li></ul></div>
+      <form class="partner-form" id="partnerForm"><h3>Partner with us</h3><div class="form-field"><label for="businessName">Business name</label><input id="businessName" required placeholder="Your business"></div><div class="form-field"><label for="businessType">Business type</label><select id="businessType" required><option value="">Select type</option><option>Restaurant</option><option>Supermarket / grocery</option><option>Online vendor</option><option>Other</option></select></div><div class="form-field"><label for="businessEmail">Business email</label><input id="businessEmail" type="email" required placeholder="name@example.com"></div><button class="button button-gold" type="submit">Send sample enquiry</button><p class="form-message" id="partnerMessage" aria-live="polite"></p><p class="fine-print">Demo form only. Enquiries are not transmitted.</p></form>
+    </section>
+
+    <section class="section pricing-section" id="pricing">
+      <div class="section-heading"><div><div class="section-kicker">ESTIMATE YOUR COST</div><h2>Simple pricing <span>guidance.</span></h2></div><p>Pricing is based on distance and package size. The figures below are illustrative examples for this school project, not confirmed business rates.</p></div>
+      <div class="calculator"><div class="calculator-fields"><div class="form-field"><label for="distance">Distance (km)</label><input type="number" id="distance" min="1" max="2000" value="10"></div><div class="form-field"><label for="calcSize">Package size</label><select id="calcSize"><option value="1">Small</option><option value="1.5">Medium</option><option value="2">Large</option></select></div><div class="form-field"><label for="calcService">Service</label><select id="calcService"><option value="1">Standard parcel</option><option value="1.5">Same-day express</option><option value="1.2">Food / grocery</option></select></div><button class="button button-gold" id="calculateButton" type="button">Calculate estimate</button></div><div class="estimate"><span>Illustrative estimate</span><strong id="estimateValue">₦2,000</strong><small>Example calculation only; actual rates may differ.</small></div></div>
+    </section>
+
+    <section class="section faq-section"><div class="section-kicker">GOOD TO KNOW</div><h2>Frequently asked <span>questions.</span></h2><div class="faq-list">
+      <details><summary>Where is EMMAV Express based?</summary><p>Our stated base location is Abakaliki, Ebonyi State, Nigeria, with nationwide coverage as the business concept.</p></details>
+      <details><summary>Do you work with businesses?</summary><p>Yes. The concept supports individual customers and business partnerships such as restaurants, supermarkets and online vendors.</p></details>
+      <details><summary>Can I track a real delivery here?</summary><p>No. Tracking on this project is a sample demonstration. Live tracking would require a connected delivery system and backend.</p></details>
+      <details><summary>How is delivery pricing determined?</summary><p>The concept uses distance and package size. The on-page calculator uses illustrative figures only.</p></details>
+    </div></section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-copy"><div class="section-kicker">CONTACT EMMAV EXPRESS</div><h2>Let's get your delivery <span>moving.</span></h2><p>Reach out with questions about deliveries or potential business partnerships.</p>
+        <div class="contact-detail"><span>CONTACT PERSON</span><b>Okpara Michael</b></div>
+        <div class="contact-detail"><span>PHONE</span><a href="tel:07045670955">07045670955</a></div>
+        <div class="contact-detail"><span>EMAIL</span><a href="mailto:okparamichaelnnamdi@gmail.com">okparamichaelnnamdi@gmail.com</a></div>
+        <div class="contact-detail"><span>LOCATION</span><b>Abakaliki, Ebonyi State, Nigeria</b></div>
+        <div class="contact-detail"><span>OPERATING HOURS</span><b>24 hours · Every day</b></div>
+      </div>
+      <form class="contact-form" id="contactForm"><h3>Send us a message</h3><div class="form-field"><label for="contactName">Full name</label><input id="contactName" required placeholder="Your full name"></div><div class="form-field"><label for="contactEmail">Email address</label><input id="contactEmail" type="email" required placeholder="you@example.com"></div><div class="form-field"><label for="contactSubject">Subject</label><input id="contactSubject" required placeholder="How can we help?"></div><div class="form-field"><label for="contactMessage">Message</label><textarea id="contactMessage" rows="4" required placeholder="Write your message"></textarea></div><button class="button button-gold" type="submit">Submit message</button><p class="form-message" id="contactFormMessage" aria-live="polite"></p><p class="fine-print">This demo form validates your entries in the browser but does not send or store messages.</p></form>
+    </section>
+  </main>
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">✦</span><span>EMMAV <b>EXPRESS</b></span></a><p>Delivering with speed, care and trust.</p><small>© <span id="year"></span> EMMAV Express. Educational website project.</small></footer>
+</body>
+</html>
